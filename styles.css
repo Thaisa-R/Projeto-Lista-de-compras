@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.8;
+  position: fixed;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #176e55;
+}
+
+nav h1 {
+  font-size: 35px;
+  color: #191919;
+  letter-spacing: 10px;
+  font-weight: 900;
+  font-variant: small-caps;
+}
+
+#carrinho {
+  font-size: 35px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+#menu-hamburguer {
+  font-size: 35px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.list {
+  width: 45%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 5px;
+  padding: 20px 40px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(100px);
+  box-shadow: 1px 5px 10px #171616;
+  z-index: 1;
+  background-color: rgba(211, 211, 211, 0.918);
+}
+
+.list h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-variant: small-caps;
+}
+
+input {
+  font-size: 15px;
+  height: 45px;
+  padding: 5px;
+  background-color: #ffffffb5;
+  border-radius: 5px;
+  outline: none;
+  border-color: #125A39;
+}
+
+#item,
+#quantidade,
+#preço,
+::placeholder {
+  padding-left: 5px;
+}
+
+.button {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  width: 60%;
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px solid #125A39;
+  font-size: 15px;
+  margin: 20px 0;
+  background-color: #1606f3;
+  color: #fff;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.remover {
+  width: 90%;
+  height: 35px;
+  background-color: rgb(241 23 7 / 83%);
+  color: #fff;
+  font-size: 15px;
+}
+
+.remover:hover {
+  background-color: #f11707a8;
+}
+
+.bi.bi-cart4 {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.bi.bi.bi-trash3 {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #121fd1b5;
+}
+
+button.clean {
+  background-color: #d40c0cd3
+}
+
+button.clean:hover {
+  background-color: #f11707a8;
+}
+
+.div-table table {
+  width: 45%;
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 27.5%;
+  display: table;
+  border-collapse: collapse;
+  background-color: rgba(211, 211, 211, 0.975);
+  border-radius: 2px;
+  overflow-x: auto;
+  backdrop-filter: blur(100px);
+  box-shadow: 1px 5px 10px #171616;
+}
+
+table th,
+td {
+  border: 1.5px solid #5b59595a;
+  padding: 5px;
+  text-align: center;
+  overflow: visible;
+  white-space: normal;
+  font-size: 15px;
+}
+
+table input[type="text"],
+table input[type="number"] {
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+th {
+  width: 100px;
+  background-color: #D5E4E5;
+  color: #191919;
+}
+
+strong {
+  color: #333;
+}
+
+h3 {
+  width: 45%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 20px auto;
+  color: #191919;
+  border-radius: 5px;
+  background-color: #d5e4e583;
+  backdrop-filter: blur(20px);
+  box-shadow: 1px 5px 10px #171616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-variant: small-caps;
+}
+
+@media screen and (max-width: 900px),
+(max-width: 800px),
+(max-width: 700px) {
+
+  body img {
+    filter: blur(1px);
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  table th,
+  td {
+    padding: 5px;
+  }
+
+  .div-table table {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  table input[type="text"],
+  table input[type="number"] {
+    width: 100%;
+  }
+
+  .list {
+    width: 75%;
+  }
+
+  h3 {
+    font-size: 20px;
+    width: 70%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  body img {
+    height: 100vh;
+  }
+
+  nav h1 {
+    font-size: 25px;
+    letter-spacing: 8px;
+  }
+
+  #carrinho,
+  #menu-hamburguer {
+    font-size: 25px;
+    top: 25px;
+  }
+
+  .list h1 {
+    font-size: 25px;
+  }
+
+  .list {
+    width: 75%;
+  }
+
+  input {
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .div-table table,
+  #tabelaProdutos {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  table th,
+  tr,
+  td {
+    font-size: 14px;
+    padding: 5px 3.5px;
+  }
+
+  table input[type="text"] {
+    width: 75px;
+  }
+
+  table input[type="number"] {
+    width: 60px;
+  }
+
+  button {
+    width: 50%;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  button i {
+    font-size: 10px;
+  }
+
+  h3 {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .bi.bi-cart4 {
+    font-size: 18px;
+  }
+
+  .bi.bi.bi-trash3 {
+    font-size: 16px;
+  }
+
+  .remover {
+    width: 90%;
+    height: 30px;
+    font-size: 11px;
+  }
+}
