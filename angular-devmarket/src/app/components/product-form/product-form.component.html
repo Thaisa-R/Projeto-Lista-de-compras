@@ -1,0 +1,78 @@
+<div class="input-group">
+  <button 
+    class="scan-btn w-full"
+    (click)="openScanner()">
+    <i class="bi bi-qr-code-scan"></i>
+    <span>{{ 'scanCode' | translate }}</span>
+  </button>
+
+  <app-scanner-modal #scannerModal></app-scanner-modal>
+
+  <div class="divider">
+    <span>{{ 'or' | translate | uppercase }}</span>
+  </div>
+
+  <p class="add-manually-label">
+    {{ 'addManually' | translate }}
+  </p>
+
+  <div class="form-field">
+    <label class="form-label">{{ 'itemPlaceholder' | translate }}</label>
+    <input
+      type="text"
+      [(ngModel)]="product.item"
+      [placeholder]="'itemPlaceholder' | translate"
+      class="form-input"
+      (keyup.enter)="addProduct()">
+  </div>
+
+  <div class="form-field">
+    <label class="form-label">{{ 'quantityPlaceholder' | translate }}</label>
+    <input
+      type="number"
+      [(ngModel)]="product.quantidade"
+      [placeholder]="'quantityPlaceholder' | translate"
+      min="1"
+      class="form-input"
+      value="1">
+  </div>
+
+  <div class="form-field">
+    <label class="form-label">{{ 'category' | translate }}</label>
+    <select
+      [(ngModel)]="product.categoria"
+      class="category-select">
+      <option value="">{{ 'category' | translate }}</option>
+      <option *ngFor="let cat of categories" [value]="cat.value">
+        {{ cat.icon }} {{ cat.label | translate }}
+      </option>
+    </select>
+  </div>
+
+  <div class="form-field">
+    <label class="form-label">{{ 'pricePlaceholder' | translate }}</label>
+    <input
+      type="number"
+      [(ngModel)]="product.preco"
+      [placeholder]="'pricePlaceholder' | translate"
+      step="0.01"
+      min="0"
+      class="form-input">
+  </div>
+
+  <div class="flex gap-3">
+    <button
+      (click)="addProduct()"
+      class="button-adc flex-1">
+      <i class="bi bi-cart4"></i>
+      <span>{{ 'add' | translate }}</span>
+    </button>
+    <button
+      (click)="clearAll()"
+      class="button-clean flex-1">
+      <i class="bi bi-trash3"></i>
+      <span>{{ 'clear' | translate }}</span>
+    </button>
+  </div>
+</div>
+

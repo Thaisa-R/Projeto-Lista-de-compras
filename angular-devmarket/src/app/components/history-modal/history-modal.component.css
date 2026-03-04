@@ -1,0 +1,125 @@
+body:not(.dark-theme) app-history-modal .fixed.inset-0 {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+body:not(.dark-theme) app-history-modal .glass-card {
+  background: rgba(255, 255, 255, 0.35) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+body:not(.dark-theme) app-history-modal .glass-card.p-4,
+body:not(.dark-theme) app-history-modal .glass-card.p-6 {
+  background: rgba(255, 255, 255, 0.3) !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+body:not(.dark-theme) app-history-modal .glass-input {
+  background: rgba(255, 255, 255, 0.3) !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  color: #ffffff !important;
+}
+
+body:not(.dark-theme) app-history-modal .glass-input:hover {
+  background: rgba(255, 255, 255, 0.4) !important;
+  border-color: #00f5ff !important;
+}
+
+body:not(.dark-theme) app-history-modal .btn-primary {
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.3), rgba(0, 255, 136, 0.3)) !important;
+  border: 2px solid rgba(255, 255, 255, 0.4) !important;
+  color: #ffffff !important;
+}
+
+body:not(.dark-theme) app-history-modal .btn-primary:hover {
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.4), rgba(0, 255, 136, 0.4)) !important;
+  border-color: #00f5ff !important;
+  box-shadow: 0 8px 30px rgba(0, 245, 255, 0.4) !important;
+}
+
+body:not(.dark-theme) app-history-modal h2 {
+  color: #ffffff !important;
+}
+
+body:not(.dark-theme) app-history-modal .text-cyan-400 {
+  color: #00f5ff !important;
+}
+
+body:not(.dark-theme) app-history-modal .text-green-400 {
+  color: #00ff88 !important;
+}
+
+body:not(.dark-theme) app-history-modal .text-red-400 {
+  color: #ff3366 !important;
+}
+
+body:not(.dark-theme) app-history-modal .text-white {
+  color: #ffffff !important;
+}
+
+body:not(.dark-theme) app-history-modal .text-white\/70,
+body:not(.dark-theme) app-history-modal [class*="text-white/70"] {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body:not(.dark-theme) app-history-modal .text-white\/50,
+body:not(.dark-theme) app-history-modal [class*="text-white/50"] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body:not(.dark-theme) app-history-modal .hover\:border-cyan-400:hover,
+body:not(.dark-theme) app-history-modal [class*="hover:border-cyan-400"]:hover {
+  border-color: #00f5ff !important;
+}
+
+body:not(.dark-theme) app-history-modal .hover\:bg-green-500\/20:hover,
+body:not(.dark-theme) app-history-modal [class*="hover:bg-green-500/20"]:hover {
+  background: rgba(0, 255, 136, 0.2) !important;
+}
+
+body:not(.dark-theme) app-history-modal .hover\:bg-red-500\/20:hover,
+body:not(.dark-theme) app-history-modal [class*="hover:bg-red-500/20"]:hover {
+  background: rgba(255, 51, 102, 0.2) !important;
+}
+
+body:not(.dark-theme) app-history-modal .border-white\/30,
+body:not(.dark-theme) app-history-modal [class*="border-white/30"] {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+body:not(.dark-theme) app-history-modal .border-white\/20,
+body:not(.dark-theme) app-history-modal [class*="border-white/20"] {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+body:not(.dark-theme) app-history-modal .bg-gradient-to-r,
+body:not(.dark-theme) app-history-modal [class*="bg-gradient-to-r"] {
+  background: linear-gradient(to right, rgba(0, 245, 255, 0.15), rgba(0, 255, 136, 0.15)) !important;
+}
+
+body:not(.dark-theme) app-history-modal .bg-black\/80,
+body:not(.dark-theme) app-history-modal [class*="bg-black/80"] {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+body:not(.dark-theme) app-history-modal .glass-card.p-4 {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+body:not(.dark-theme) app-history-modal .glass-card.p-6 {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+body.dark-theme app-history-modal .glass-card {
+  background: rgba(22, 33, 62, 0.7) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-theme app-history-modal .bg-black\/80,
+body.dark-theme app-history-modal [class*="bg-black/80"] {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
